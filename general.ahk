@@ -13,14 +13,6 @@ boolean := true
 Clipboard := xpos ", " ypos
 return
 
-
-
-
-^!F8::
-clipboard := % WinExist("A")
-return
-
-
 ^F5::
 reload
 MsgBox, 0, updated, updated, 0.2
