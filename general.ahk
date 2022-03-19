@@ -18,12 +18,6 @@ reload
 MsgBox, 0, updated, updated, 0.2
 return
 
-^F4::
-ExitApp
-return
-
-
-
 XButton2::
 send !{tab}
 return
@@ -62,7 +56,7 @@ else{
         run C:\Users\David\Documents\AutoHotKey\onenote.ahk
         return
         }
-    If(Program == "ACR" or Program == "acr" or Program == "adobe"){
+    If(Program == "AAR" or Program == "aar" or Program == "adobe" or Program == "ACR" or Program = "acr"){
         run C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe
         return
         }
