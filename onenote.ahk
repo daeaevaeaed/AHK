@@ -15,18 +15,13 @@ If not WinExist("OneNote ahk_class ApplicationFrameWindow", "OneNote")
 send !p
 send !sp
 send !l
-mousemove 1775, 130
-Click
-sleep 300
-send ^a
-sleep 500
-send {BackSpace}
 return
 
 
 ^+u::
 sleep 20
 send !r
+sleep 20
 send !3
 return
 
@@ -42,9 +37,6 @@ send !r
 send !1
 return
 
-!F4::
-ExitApp
-return
 
 ^!F5::
 reload
