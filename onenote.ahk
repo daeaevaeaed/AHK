@@ -59,16 +59,52 @@ return
 
 
 ^!a::
-MouseGetPos, xpos, ypos
 BlockInput On
 send !f
-mousemove 541, 121
+send !o
+send {left}
+send ^+{right}
+sleep 1
+send ^C
+zoom = %Clipboard%
+send 477
+MouseGetPos, xpos, ypos
+CoordMode, Pixel, Screen
+sleep 200
+send {PgUp}
 sleep 20
-Click
+send {PgUp}
 sleep 20
-mousemove xpos, ypos
-sleep 30
+send {PgUp}
+sleep 100
+send !f
+sleep 100
+send !h
+sleep 100
+CoordMode, Pixel, Relative
+PixelGetColor reference, 32, 182
+PixelGetColor color, 564, 161
+if(color == reference){
+    sleep 50
+    send !i
+    sleep 20
+}
+else{
+    sleep 50
+    send !k
+    sleep 20
+}
+
+sleep 100
 send {esc}
-sleep 20
+sleep 100
+send !f
+send !o
+send {left}
+send ^+{right}
+sleep 1
+send %Clipboard%
+send {enter}
 BlockInput Off
 return
+

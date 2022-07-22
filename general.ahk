@@ -7,6 +7,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 MsgBox, 0, updated, updated, 0.2
 
 ^!k::
+CoordMode, Mouse, screen
 MouseGetPos, xpos, ypos
 MsgBox 0, %xpos% %ypos%, %xpos% %ypos% w, 0.2
 boolean := true
@@ -88,3 +89,23 @@ else{
         return
     }
 }
+return
+
++#n::
+run C:\Users\David\Documents\AutoHotKey\onenote.ahk
+return
+
+^!c::
+InputBox xpos, xpos, xpos
+inputbox ypos, ypos, ypos
+PixelGetColor colorsample, xpos, ypos
+StringReplace, colorsample, colorsample, 0x, , all
+msgbox Color at (%xpos%; %ypos%) is %colorsample%
+Clipboard := colorsample
+return
+
+^+m::
+inputbox xpos, xpos, xpos
+inputbox ypos, ypos, ypos
+mousemove xpos, ypos
+return
