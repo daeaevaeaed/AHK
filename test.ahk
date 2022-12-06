@@ -5,12 +5,17 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #SingleInstance force
 
+^!z::
+    WinGetTitle, title, A
+    sleep 20
+    MsgBox %title%
+Return
 
 !right::
-MouseMove, 10, 0, 100, R
-sleep 10
-mousemove, -10, 0, R
-return
+    MouseMove, 10, 0, 100, R
+    sleep 10
+    mousemove, -10, 0, R
+    return
 
 !F4::
 ExitApp

@@ -26,15 +26,16 @@ return
 
 
 ^+u::
-sleep 20
+sleep 25
 send !r
-sleep 20
+sleep 25
 send !3
 return
 
 ^+k::
-sleep 20
+sleep 25
 send !r
+sleep 25
 send !2
 return
 

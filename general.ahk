@@ -41,20 +41,20 @@ if ErrorLevel
 else{
     MsgBox 0, %Program%, %program%, 0.1
     if(Prorgam =="YT" or Program == "yt"){
-        Run C:\Users\David\AppData\Local\Programs\Opera\launcher.exe
+        Run C:\Users\fisch\AppData\Local\Programs\Opera\launcher.exe
         sleep 1000
         send youtube.com{enter}
     }
     If(Program == "VSC" or Program == "vsc"){
-        run C:\Users\David\AppData\Local\Programs\Microsoft VS Code\Code.exe
+        run C:\Users\fisch\AppData\Local\Programs\Microsoft VS Code\Code.exe
         return
-    }
+}
     If(Program == "Word" or Program == "word"){
         run C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE
         return
         }
     If(Program == "Onenote" or Program == "onenote"){
-        run C:\Users\David\Documents\AutoHotKey\onenote.ahk
+        run C:\Users\fisch\Documents\AutoHotKey\onenote.ahk
         return
         }
     If(Program == "AAR" or Program == "aar" or Program == "adobe" or Program == "ACR" or Program = "acr"){
@@ -62,7 +62,7 @@ else{
         return
         }
     if(Program == "twitter"){
-        RunWait, C:\Users\David\AppData\Local\Programs\Opera\launcher.exe
+        RunWait, C:\Users\fisch\AppData\Local\Programs\Opera\launcher.exe
         counter := 0
         sleep 1000
         send ^t
@@ -71,7 +71,7 @@ else{
         return
     }
     if(Program == "insta"){
-        RunWait, C:\Users\David\AppData\Local\Programs\Opera\launcher.exe
+        RunWait, C:\Users\fisch\AppData\Local\Programs\Opera\launcher.exe
         counter := 0
         sleep 1000
         ;while(counter < 20){
@@ -92,7 +92,7 @@ else{
 return
 
 +#n::
-run C:\Users\David\Documents\AutoHotKey\onenote.ahk
+run C:\Users\fisch\Documents\AutoHotKey\onenote.ahk
 return
 
 ^!c::
